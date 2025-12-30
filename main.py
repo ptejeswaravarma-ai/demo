@@ -21,7 +21,7 @@ import hashlib
 
 app = FastAPI(
     title="Demo E-commerce API",
-    description="Buggy API for testing AIQA platform",
+    description="Buggy API for testing AIQA",
     version="1.0.0"
 )
 
