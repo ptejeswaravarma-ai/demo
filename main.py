@@ -121,6 +121,9 @@ async def root():
 # ----------------------------------------------------------------------------
 # USER ENDPOINTS
 # ----------------------------------------------------------------------------
+@app.get("/health")
+async def health_check() -> dict[str, str]:
+      return {"status": "ok"}
 
 @app.post("/api/users/register", response_model=UserResponse)
 async def register_user(user: UserCreate):
