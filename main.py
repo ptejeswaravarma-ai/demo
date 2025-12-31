@@ -19,6 +19,7 @@ import time
 from datetime import datetime
 import hashlib
 
+# Testing CI bot
 app = FastAPI(
     title="Demo E-commerce API",
     description="Buggy API for testing AIQA platform",
@@ -48,7 +49,7 @@ products_db = {
     2: {"id": 2, "name": "Mouse", "price": 29.99, "stock": 50, "category": "Electronics"},
     3: {"id": 3, "name": "Keyboard", "price": 79.99, "stock": 30, "category": "Electronics"},
     4: {"id": 4, "name": "Monitor", "price": 299.99, "stock": 15, "category": "Electronics"},
-    5: {"id": 5, "name": "Desk", "price": 199.99, "stock": 5, "category": "Furniture"},
+    5: {"id": 6, "name": "Desk", "price": 199.99, "stock": 5, "category": "Furniture"},
 }
 
 # ============================================================================
@@ -121,6 +122,9 @@ async def root():
 # ----------------------------------------------------------------------------
 # USER ENDPOINTS
 # ----------------------------------------------------------------------------
+@app.get("/health")
+async def health_check() -> dict[str, str]:
+    return {"status": "ok"}
 
 @app.post("/api/users/register", response_model=UserResponse)
 async def register_user(user: UserCreate):
