@@ -50,7 +50,7 @@ products_db = {
     4: {"id": 4, "name": "Monitor", "price": 299.99, "stock": 15, "category": "Electronics"},
     5: {"id": 6, "name": "Desk", "price": 199.99, "stock": 5, "category": "Furniture"},
     6: {"id": 7, "name": "Desk", "price": 199.99, "stock": 5, "category": "Furniture"},
-    7: {"id": 8, "name": "1Desk", "price": 199.99, "stock": 5, "category": "Furniture"}
+    7: {"id": 9, "name": "1Desk", "price": 199.99, "stock": 5, "category": "Furniture"}
 }
 
 # ============================================================================
