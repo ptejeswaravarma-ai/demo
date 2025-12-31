@@ -49,6 +49,7 @@ products_db = {
     3: {"id": 3, "name": "Keyboard", "price": 79.99, "stock": 30, "category": "Electronics"},
     4: {"id": 4, "name": "Monitor", "price": 299.99, "stock": 15, "category": "Electronics"},
     5: {"id": 6, "name": "Desk", "price": 199.99, "stock": 5, "category": "Furniture"},
+    6: {"id": 7, "name": "Desk1", "price": 199.99, "stock": 5, "category": "Furniture"},
 }
 
 # ============================================================================
